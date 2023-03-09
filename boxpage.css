@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/*#parentone{
+    height: 50px;
+    width: 50px;
+    margin: 60px;
+    border: 50px;
+    padding: 40px;
+    background-color: aquamarine;
+}*/
+#one{
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+    padding: 20px;
+    border: 30px solid slateblue;
+    margin: 40px;
+}
+#childone{
+    padding:12px;
+}
+#spanone{
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+    padding: 20px;
+    border: 30px solid rgb(234, 246, 0);
+    margin: 40px;
+}
