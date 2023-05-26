@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Rancho");
 body{
     overflow: hidden;
 }
 .wrapper{
-    display: flex;
+    display: grid;
+    grid-template-rows: 2;
     justify-content: center;
     padding-block: 45vh;
     padding-inline: 35vw;
@@ -25,5 +27,24 @@ body{
 }
 .nightClock{
     box-shadow: 1px 1px rgb(55, 53, 53);
+}
+span{
+    padding-left: 20vw;
+    padding-top: 2vh;
+}
+.reference{
+    --border-radius: 100rem;
+    --padding-inline: 5rem;
+    --padding-block: 1.4rem;
+    --scale: 0.2;
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'Rancho';
+    font-weight:bolder;
+    color: beige;
+    background-color: rgb(104, 104, 247);
+    border-radius: calc(var(--scale)*var(--border-radius));
+    padding-block: calc(var(--scale)*var(--padding-block));
+    padding-inline: calc(var(--scale)*var(--padding-inline));
 }
 
