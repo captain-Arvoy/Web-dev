@@ -1,0 +1,29 @@
+body{
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    padding-block: 45vh;
+    padding-inline: 35vw;
+}
+.components{
+    padding-left : 5vw;
+    font-family: '';
+}
+.clock{
+    display: flex;
+    border: 2px solid black;
+    padding: 0.5vw;
+    border-radius: 2rem;
+}
+.Morning{
+    background-image: linear-gradient(to right,#f7e2a1,#f7c77c,#f7eec9);
+}
+.Night{
+    background-image: linear-gradient(to bottom,#2b2a33,rgba(0, 0, 0, 0.697));
+}
+.nightClock{
+    box-shadow: 1px 1px rgb(55, 53, 53);
+}
+
