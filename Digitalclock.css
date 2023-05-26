@@ -22,11 +22,15 @@ body{
 .Morning{
     background-image: linear-gradient(to right,#f7e2a1,#f7c77c,#f7eec9);
 }
-.Night{
+.night{
     background-image: linear-gradient(to bottom,#2b2a33,rgba(0, 0, 0, 0.697));
 }
 .nightClock{
     box-shadow: 1px 1px rgb(55, 53, 53);
+    color: aliceblue;
+    border-color: rgba(240, 221, 196, 0.671);
+    border-width: 0.2rem;
+    box-shadow: 0.2rem 0.3rem #2b2a33;
 }
 span{
     padding-left: 20vw;

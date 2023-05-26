@@ -10,9 +10,12 @@ setInterval(()=>{
         }
         if (hr > 12){
             clock.querySelector(".component4").textContent = 'PM';
-            if (hr > 18){
+            if (hr >= 18){
                 document.body.className = "night";
                 document.querySelector(".clock").className = "clock nightClock";
+            } else {
+                document.body.className = "Morning";
+
             }
         } else {
             document.body.className = "Morning";
