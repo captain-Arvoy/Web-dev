@@ -1,29 +1,39 @@
-@import url("https://fonts.googleapis.com/css?family=Rancho");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
 body{
+    height:100vh;
+    width:100vw;
     overflow: hidden;
 }
 .wrapper{
+    font-size: 20px;
     display: grid;
     grid-template-rows: 2;
     justify-content: center;
     padding-block: 45vh;
     padding-inline: 35vw;
+
 }
 .components{
     padding-left : 5vw;
-    font-family: '';
+    padding: 1rem;
 }
 .clock{
     display: flex;
     border: 2px solid black;
-    padding: 0.5vw;
-    border-radius: 2rem;
+    padding: 1vw;
+    width: fit-content;
+    border-radius: 1rem;
 }
 .Morning{
-    background-image: linear-gradient(to right,#f7e2a1,#f7c77c,#f7eec9);
+    background-image: radial-gradient(#f7e2a1,#f7e57c,#f7eec9);
 }
 .night{
-    background-image: linear-gradient(to bottom,#2b2a33,rgba(0, 0, 0, 0.697));
+    background-image: radial-gradient(#2b2a33,rgba(0, 0, 0, 0.697));
 }
 .nightClock{
     box-shadow: 1px 1px rgb(55, 53, 53);
@@ -31,6 +41,12 @@ body{
     border-color: rgba(240, 221, 196, 0.671);
     border-width: 0.2rem;
     box-shadow: 0.2rem 0.3rem #2b2a33;
+}
+.time {
+    background-color: #ffffff1d;
+    backdrop-filter: blur(5px);
+    border-radius: 0.6rem;
+    padding: 1rem;
 }
 span{
     padding-left: 20vw;
@@ -42,13 +58,17 @@ span{
     --padding-block: 1.4rem;
     --scale: 0.2;
     text-decoration: none;
-    font-size: 3vw;
-    font-family: 'Rancho';
+    font-size: 30px;
+    /* font-family: 'Rancho'; */
     font-weight:bolder;
     color: beige;
-    background-color: rgb(104, 104, 247);
+    background-color: rgb(12, 12, 24);
     border-radius: calc(var(--scale)*var(--border-radius));
     padding-block: calc(var(--scale)*var(--padding-block));
     padding-inline: calc(var(--scale)*var(--padding-inline));
 }
-
+@media (width < 600px ){
+    .wrapper {
+        transform: rotateZ(-90deg) scale(2);
+    }
+}
