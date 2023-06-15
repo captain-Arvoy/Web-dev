@@ -33,7 +33,8 @@ body{
     box-shadow: 0.2rem 0.3rem #2b2a33;
 }
 span{
-    padding-left: 20vw;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 2vh;
 }
 .reference{
