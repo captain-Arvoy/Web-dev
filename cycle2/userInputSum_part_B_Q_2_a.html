@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Part B | Question 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <form action="p2Q2a.php" method="post">
+      <label for="num">Number</label>
+      <input id="num" type="number" name="num" value="">
+      <button type="submit">submit</button>
+    </form>
+    <?php
+      if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        $num = $n = $_POST["num"];
+        $sum = 0;
+        while ($n > 0 ) {
+          $rem = $n%10;
+          $sum += $rem;
+          $n = $n/10;
+        }
+        echo '<div><strong>sum = '.$sum.'</strong></div>';
+      }
+    ?>
+  </body>
+</html>
